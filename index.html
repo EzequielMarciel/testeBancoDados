@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste Supabase</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    form { margin-bottom: 20px; }
+    input { margin: 5px; padding: 8px; }
+    button { padding: 8px 12px; }
+    #perfil { border: 1px solid #ccc; padding: 15px; margin-top: 20px; }
+    img { max-width: 100px; border-radius: 50%; }
+  </style>
+</head>
+<body>
+  <h1>Cadastro de Usuário</h1>
+  <form id="cadastroForm">
+    <input type="text" id="nome" placeholder="Nome" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="text" id="foto" placeholder="URL da foto"><br>
+    <button type="submit">Cadastrar</button>
+  </form>
+
+  <div id="perfil"></div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
