@@ -1,8 +1,8 @@
 import { createClient } from "sb_publishable_p9mvf-w3oreBk5KvAMKfvg_tpScOIzu"
 
 // coloque aqui suas credenciais
-const supabaseUrl = "https://SEU-PROJETO.supabase.co"
-const supabaseKey = "SUA_ANON_PUBLIC_KEY"
+const supabaseUrl = "https://rzmomstdheorrqwkdfek.supabase.co"
+const supabaseKey = "sb_publishable_p9mvf-w3oreBk5KvAMKfvg_tpScOIzu"
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 const form = document.getElementById("cadastroForm")
@@ -31,6 +31,7 @@ form.addEventListener("submit", async (e) => {
     ${usuario.foto_url ? `<img src="${usuario.foto_url}" alt="Foto">` : ""}
   `
 })
+
 
 
 
