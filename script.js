@@ -1,4 +1,4 @@
-import { createClient } from "sb_publishable_p9mvf-w3oreBk5KvAMKfvg_tpScOIzu"
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm"
 
 // coloque aqui suas credenciais
 const supabaseUrl = "https://SEU-PROJETO.supabase.co"
@@ -31,6 +31,7 @@ form.addEventListener("submit", async (e) => {
     ${usuario.foto_url ? `<img src="${usuario.foto_url}" alt="Foto">` : ""}
   `
 })
+
 
 
 
