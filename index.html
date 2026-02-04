@@ -1,62 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/avif" href="../zMisc/N.png"/>
-  <title>Cadastro</title>
+  <title>Teste Supabase</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    form { margin-bottom: 20px; }
+    input { margin: 5px; padding: 8px; }
+    button { padding: 8px 12px; }
+    #perfil { border: 1px solid #ccc; padding: 15px; margin-top: 20px; }
+    img { max-width: 100px; border-radius: 50%; }
+  </style>
 </head>
 <body>
-  <div class="container">
-        <h1>----------Cadastro-----------</h1>
-        <hr style="width: 20pc;">
-  <div class="cadastro" id="cadastro"> 
-      <form id="cadastroForm">
-        <label for="nome">Nome: <input type="text" id="nome" placeholder="Nome" required></label>
-        <label for="email">e-mail: <input type="email" id="email" placeholder="e-mail" required></label>
-        <label for="foto">Foto: <input type="text" id="foto" placeholder="URL da foto" required></label><br>
-      </form>
-  </div>
-        <button type="submit" id="submitBtn">Cadastrar</button>
-        <hr style="width:20pc;"> <!--travessão para estilização-->
-        Já com conta?<a href="login.html" >Entre!</a>
-  </div>
+  <h1>Cadastro de Usuário</h1>
+  <form id="cadastroForm">
+    <input type="text" id="nome" placeholder="Nome" required><br>
+    <input type="email" id="email" placeholder="Email" required><br>
+    <input type="text" id="foto" placeholder="URL da foto"><br>
+    <button type="submit">Cadastrar</button>
+  </form>
 
   <div id="perfil"></div>
 
   <script type="module" src="app.js"></script>
 </body>
 </html>
-<style>
-body {
-    overflow: hidden; /*esconde a barra vertical de rolagem*/
-    display: flex;
-    align-items: center; /*alinhamento vertical*/
-    justify-content: center; /*alinhamento horizontal*/
-    height: 100vh;
-    font-family: 'Times New Roman', Times, serif;
-}
-.container { /* caixa que engloba o conteudo da div*/
-    display: flex;
-    flex-direction: column;
-    align-items: center; /*alinhamento vertical para melhor visibilidade*/
-    justify-content: center; /*alinhamento horizontal para melhor visibilidade*/
-    width: 350px; height: 350px; /*proproções*/
-    background-color: rgb(76, 162, 233);
-    padding: 60px;
-    border-radius: 18px;
-    border: rgb(206, 66, 94) 4px solid;
-}
-.cadastro { padding: 60px;} /*espaçamento dos elementos */
-input, button {
-    width: 250px;
-    height: 25px;
-    border-radius: 8px; /*arredondamento das quinas dos elementos*/
-}
-#submitBtn {
-    cursor: pointer;
-    color: lightgreen;
-    background-color: rebeccapurple;
-}
-</style>
