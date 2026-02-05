@@ -36,6 +36,7 @@ form.addEventListener("submit", async (e) => {
   } else {
     console.log("Registro inserido:", data)
     const usuario = data[0]
+    perfilDiv.style.display = "flex";
     perfilDiv.innerHTML = `
       <h2>Usuário cadastrado</h2>
       <p><strong>Nome:</strong> ${usuario.nome}</p>
